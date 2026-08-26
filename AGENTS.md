@@ -17,6 +17,12 @@ native macOS companion controller. It is portable and can be opened on its own.
 
 ## Development Governance
 
+- Before creating an Agent Note, search scoped existing notes and record whether
+  the decision extends, partially or fully supersedes, or is independent from
+  them.
+- Archived Agent Note triplets are sealed. Never edit or delete them; follow the
+  archive manifest workflow in `agent_notes/README.md`.
+
 - Before substantial implementation, clarify the problem, observable outcome,
   constraints, non-goals, genuine alternatives, acceptance criteria, and risks.
 - Discuss unresolved semantics before code commits the decision. Do not use SPEC

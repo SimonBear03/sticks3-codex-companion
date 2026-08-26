@@ -1,6 +1,6 @@
 # Agent Note: Strengthen Agent Note governance
 
-Status: review
+Status: implemented
 
 English | [中文](2026-08-26-strengthen-agent-note-governance.zh.md)
 
@@ -11,7 +11,7 @@ authorization, review, and acceptance gates, but it does not explain
 supersession, implemented-note maintenance, consolidation, or archive selection
 well enough. Archived notes are described as frozen without a mechanical seal.
 
-## Proposal
+## Decision
 
 Keep the six-stage lifecycle and add four bounded safeguards:
 
@@ -36,7 +36,7 @@ repository remains the independent owner of its copied governance files.
 - Keep archive immutability as policy only: rejected because regenerating a
   sidecar currently permits an archived record to change unnoticed.
 
-## Acceptance criteria
+## Consequences
 
 - The local bilingual guide covers supersession, currentness, consolidation,
   future-value classification, and archive rules.
@@ -46,7 +46,7 @@ repository remains the independent owner of its copied governance files.
 - `AGENTS.md` routes agents to the new safeguards without duplicating the guide.
 - Local governance checks and `git diff --check` pass.
 
-## Risks
+### Trade-offs and residual risks
 
 - Hash sealing intentionally makes casual archive repair impossible.
 - Supersession and future value remain semantic judgments; mechanical checks
